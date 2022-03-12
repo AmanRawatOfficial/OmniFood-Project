@@ -12,7 +12,6 @@ btnNavEl.addEventListener("click", function () {
 /* Smooth scrolling animation */
 
 const allLinks = document.querySelectorAll("a:link");
-console.log(allLinks);
 allLinks.forEach(function (link) {
    link.addEventListener("click", function (event) {
       event.preventDefault();
@@ -67,7 +66,6 @@ function checkFlexGap() {
    document.body.appendChild(flex);
    var isSupported = flex.scrollHeight === 1;
    flex.parentNode.removeChild(flex);
-   console.log(isSupported);
 
    if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
